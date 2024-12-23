@@ -112,7 +112,7 @@ metadata:
 spec:
   source:
     git:
-      uri: https://github.com/DanielCasali/mma-ai
+      uri: https://github.com/pgress/mma-ai
       ref: main
     contextDir: llama-runtime
     type: Git
