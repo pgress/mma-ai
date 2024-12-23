@@ -5,7 +5,7 @@ RUN dnf update -y && dnf install -y \
   && dnf clean all
 
 
-RUN git clone --recursive https://github.com/DanielCasali/OpenBLAS.git && cd OpenBLAS && \
+RUN git clone --recursive https://github.com/OpenMathLib/OpenBLAS.git && cd OpenBLAS && \
     make -j$(nproc --all) TARGET=POWER10 USE_THREAD=1 && \
     make PREFIX=/opt/OpenBLAS install && \
     cd /
